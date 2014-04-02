@@ -1,0 +1,69 @@
+html {
+	background: url('img/teal_octopus.png') no-repeat right,  url('img/hot_air_balloon.JPG') no-repeat center;
+	background-size: 10%, cover;
+
+}
+body {
+	padding: 0;
+	margin: auto;
+	width: 90%;
+
+}
+
+
+
+#nav {
+	font-size: 1.25em;
+	color: white;
+	background-color: ;
+	width: 100%;
+	position: fixed;
+	display: inline-block;
+	top: 0;
+	text-align: center;
+	padding-top: 15px;
+		
+	box-shadow: 0px 0px 8px 0px #000000;
+		-webkit-box-shadow: 0px 0px 8px 0px #000000;
+		-moz-box-shadow: 0px 0px 8px 0px #000000;
+
+}
+
+#nav a {
+	font-size: 1.25em;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: lightyellow;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#nav a:hover {
+	color: grey;
+}
+
+
+h1 {
+  padding-top: 50px;
+  color: tomato;
+  font-size: 2.5em;
+  margin: 15px ;
+
+
+}
+
+h2 {
+  color: royalblue;
+  font-size: 1.5em;
+  margin: 20px;
+}
+
+p {
+	margin: 20px;
+}
+
+.secret {
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+}
