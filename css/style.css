@@ -1,22 +1,27 @@
 html {
-	background: url('img/teal_octopus.png') no-repeat right,  url('img/hot_air_balloon.JPG') no-repeat center;
-	background-size: 10%, cover;
-
+	font-family: sans-serif;
 }
 body {
-	padding: 0;
+	position: relative; 
+	padding: 0px;
 	margin: auto;
-	width: 90%;
+	width: 100%;
+	min-height: 800px;
+	background: url('img/teal_octopus.png') no-repeat right bottom,  url('img/hot_air_balloon.JPG') no-repeat center;
+	background-size: 10%, cover;
+	background-attachment: scroll;
 
 }
 
 
 
-#nav {
+.nav {
 	font-size: 1.25em;
+	background-color: rgba(0,0,0, .5);
 	color: white;
-	background-color: ;
 	width: 100%;
+	margin: auto;
+	padding: auto;
 	position: fixed;
 	display: inline-block;
 	top: 0;
@@ -29,26 +34,77 @@ body {
 
 }
 
-#nav a {
+.nav a {
 	font-size: 1.25em;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 0 15px 10px 15px;
 	color: lightyellow;
 	text-decoration: none;
 	display: inline-block;
 }
 
-#nav a:hover {
-	color: grey;
+.nav a:hover {
+	color: yellow;
 }
 
 
+.footer {
+	position: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	bottom: 10px;
+	background: rgba(255,255,255,.3);
+	width: 100%;
+	text-align: center
+}
+
+.resources {
+	background-color: white;
+	border: 2px, #FFF, solid;
+	color: navy-blue;
+	margin: 5px; 
+	padding: 5px;
+	position: fixed;
+	top: 20%;
+	left: 60%;
+}
+
+.resources a::after {
+	content: " > ";
+}
+
+
+.content {
+	background-color: rgba(255, 255, 153, .8);
+	width: 50%;
+	height: 75%;
+	overflow:scroll;
+	max-width: 760px;
+	min-width: 300px;
+	margin: 2em;
+	padding: 5px;
+	position: fixed;
+	left: 1em;
+	top: 15%;
+
+	background-attachment: scroll;
+
+}
+
+.date {
+	font-style: italic;
+	font-weight: bolder;
+	margin: 1em;
+}
+
 h1 {
-  padding-top: 50px;
   color: tomato;
   font-size: 2.5em;
-  margin: 15px ;
-
+  margin: 15px;
+  position: fixed;
+  left: 1em;
+  top: 1.25em;
+  padding-top: 10px;
 
 }
 
@@ -56,14 +112,13 @@ h2 {
   color: royalblue;
   font-size: 1.5em;
   margin: 20px;
+  position: relative;
+
 }
 
 p {
 	margin: 20px;
+	line-height: 1.5em;
 }
 
-.secret {
-	position: absolute;
-	bottom: 0;
-	margin: 0;
-}
+
